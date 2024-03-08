@@ -3,6 +3,7 @@
     --main-color: #384aeb;
     --gray-color: #EEEEEE;
     --black-color: #222222;
+    --font-oswald: "Oswald",sans-serif
 }
 
 ul li a.active {
@@ -145,4 +146,22 @@ a {
     /* تأثير التحول */
     padding: 10px;
     margin: 0;
+}
+.title {
+    font-family: var(--font-oswald);
+}
+
+.pb-60px {
+    padding-bottom: 60px;
+}
+
+.title h2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.title .border-bottom {
+    border-bottom-color: var(--main-color) !important;
+    border-bottom-width: 2px !important;
 }
