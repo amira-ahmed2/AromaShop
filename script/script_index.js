@@ -2,8 +2,8 @@ cards = [
     {
         id: 1,
         img:"./images/product1.png",
-        catg:"Beauty",
-        title:"Women Freshwash",
+        catg:"Accessories",
+        title:"Quartz Belt Watch",
         price:"$150.00"
     },
     {
@@ -16,15 +16,15 @@ cards = [
     {
         id: 3,
         img:"./images/product3.png",
-        catg:"Beauty",
-        title:"Women Freshwash",
+        catg:"Decor",
+        title:"Quartz Belt Watch",
         price:"$150.00"
     },
     {
         id: 4,
         img:"./images/product4.png",
-        catg:"Beauty",
-        title:"Women Freshwash",
+        catg:"Decor",
+        title:"Room Flash Light",
         price:"$150.00"
     },
     {
