@@ -133,7 +133,7 @@ a {
 
 .disc_text {
     position: absolute;
-    top: 230px;
+    top: 60%;
     left: 0;
     width: 60%;
     background: var(--main-color);
@@ -165,3 +165,4 @@ a {
     border-bottom-color: var(--main-color) !important;
     border-bottom-width: 2px !important;
 }
+
