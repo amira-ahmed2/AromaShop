@@ -9,6 +9,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css">
+
   <link rel="stylesheet" href="./style/style_index.css">
   <title>home</title>
 
@@ -102,12 +104,12 @@
       </div>
     </section>
     <!-- 3 cards image products -->
-    <section class="container-fluid my-4">
+    <section class="container-fluid mt-4 mb-5 ">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mx-0">
         <div class="col">
           <div class="card border-0">
             <img src="./images/hero-slide1.png" class="card-img" alt="...">
-            <div class="card-img-overlay">
+            <div class="card-img-overlay card-imgoverlay">
               <a href="" class="disc_text text-white">
                 <h3 class="card-title ">Shoes Rose</h3>
                 <p class="card-text">Accessories Item</p>
@@ -118,7 +120,7 @@
         <div class="col d-md-block d-none">
           <div class="card border-0">
             <img src="./images/hero-slide2.png" class="card-img " alt="...">
-            <div class="card-img-overlay">
+            <div class="card-img-overlay card-imgoverlay">
               <a href="#" class="disc_text text-white ">
                 <h3 class="card-title">Wireless Headphone</h3>
                 <p class="card-text ">Accessories Item</p>
@@ -129,7 +131,7 @@
         <div class="col d-lg-block d-none">
           <div class="card border-0">
             <img src="./images/hero-slide3.png" class="card-img-top" alt="...">
-            <div class="card-img-overlay">
+            <div class="card-img-overlay card-imgoverlay">
               <a href="#" class="disc_text text-white ">
                 <h3 class="card-title">Wireless Headphone</h3>
                 <p class="card-text">Accessories Item</p>
@@ -140,19 +142,100 @@
       </div>
     </section>
     <!-- Trending Product -->
-    <section class="container my-4">
+    <section class="container my-5-3-rem ">
       <div class="title pb-60px">
         <small class="text-muted">Popular Item in the market</small>
         <h2>Trending <span class="border-bottom">Product</sub> </h2>
       </div>
       <!-- cards -->
-<div class="row row-cols-1 row-cols-md-4 g-4" id="product-cards-container">
-  
+      <div class="row row-cols-1 row-cols-md-4 g-4" id="product-cards-container">
 
-</div>
+
+      </div>
+    </section>
+    <!-- Up To 20% Off -->
+    <section class="container-fluid  my-5-3-rem g-0 ">
+      <div class="card text-bg-dark border-0 bg_img">
+        <div class="col-xl-5">
+          <div class="offer__content text-center text-dark ">
+            <h2 class="card-title">Up To 20% Off</h2>
+            <h3 class="card-text">Winter Sale</h3>
+            <p class="card-text text-muted ">Him she'd let them sixth saw light</p>
+            <a class="button" href="#">Browse Now</a>
+          </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers Product -->
+    <!-- <section class="container my-5-3-rem ">
+      <div class="title pb-60px">
+        <small class="text-muted">Popular Item in the market</small>
+        <h2>Best <span class="border-bottom">Sellers</sub> </h2>
+      </div>
+      <div class="row row-cols-1 row-cols-md-4 g-4" id="product-cards-bast-sellers"></div>
+    </section> -->
+    <!-- Latest News 
+    Popular Item in the market -->
+    <section class="container my-5-3-rem ">
+      <div class="title pb-60px">
+        <small class="text-muted">Popular Item in the market</small>
+        <h2>Best <span class="border-bottom">Latest News</sub> </h2>
+      </div>
+      <!-- cards -->
+      <div class="row  row-cols-1 row-cols-md-2 row-cols-lg-3 g-4  " id="product-cards-latest-news"></div>
+
+    </section>
+
+    <section class="container shadow p-5 text-center my-5">
+      <div class=" ">
+        <h3 class="subscribe__title">Get Update From Anywhere</h3>
+        <p>Bearing Void gathering light light his eavening unto dont afraid</p>
+      </div>
+      <form action="">
+        <div class="mb-3">
+          <input type="email" class="form-control rounded-5 " id="exampleInputEmail1" placeholder="Your Email Address"
+            aria-describedby="emailHelp">
+        </div>
+
+        <button type="submit" class="btn btn-subscribe">Subscribe Now</button>
+      </form>
     </section>
   </main>
-  <script src="./script/script_index.js"></script>
-</body>
+
+  <body>
+    <div class="footer-dark">
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-3 item">
+              <h3>Services</h3>
+              <ul>
+                <li><a href="#">Web design</a></li>
+                <li><a href="#">Development</a></li>
+                <li><a href="#">Hosting</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-3 item">
+              <h3>About</h3>
+              <ul>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 item text">
+              <h3>Company Name</h3>
+              <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus
+                elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+            </div>
+            <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                  class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a
+                href="#"><i class="icon ion-social-instagram"></i></a></div>
+          </div>
+          <p class="copyright">Company Name © 2024</p>
+        </div>
+      </footer>
+      <script src="./script/script_index.js"></script>
+  </body>
 
 </html>

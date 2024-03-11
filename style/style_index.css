@@ -1,168 +1,300 @@
 /* Define a CSS variable */
 :root {
-    --main-color: #384aeb;
-    --gray-color: #EEEEEE;
-    --black-color: #222222;
-    --font-oswald: "Oswald",sans-serif
+  --main-color: #384aeb;
+  --gray-color: #eeeeee;
+  --black-color: #222222;
+  --font-oswald: "Oswald", sans-serif;
 }
 
 ul li a.active {
-    color: var(--main-color) !important;
+  color: var(--main-color) !important;
 }
 
 /* Custom CSS for Hover Effect */
 .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
-    display: block;
+  display: block;
 }
 
 /* Custom CSS to hide the dropdown arrow */
 .navbar-nav .nav-item.dropdown .nav-link::after {
-    display: none !important;
+  display: none !important;
 }
 
 button {
-    border-color: var(--gray-color) !important;
-    color: var(--black-color) !important;
+  border-color: var(--gray-color) !important;
+  color: var(--black-color) !important;
 }
 
 button:hover {
-    border-color: var(--main-color) !important;
-    background-color: transparent !important;
+  border-color: var(--main-color) !important;
+  background-color: transparent !important;
 }
 
 .hero-banner::before {
-    content: "";
-    display: block;
-    width: 5%;
-    height: 100%;
-    background: var(--main-color);
-    position: absolute;
-    top: 0;
-    left: 0;
+  content: "";
+  display: block;
+  width: 5%;
+  height: 100%;
+  background: var(--main-color);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .hero-banner {
-    background: #F1F6F7 !important;
-    position: relative;
-    margin-bottom: 10px;
+  background: #f1f6f7 !important;
+  position: relative;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 991px) {
-    .hero-banner::before {
-        width: 35%;
-    }
+  .hero-banner::before {
+    width: 35%;
+  }
 }
 
 @media (min-width: 575px) {
-    .hero-banner::before {
-        width: 20%;
-    }
+  .hero-banner::before {
+    width: 20%;
+  }
 }
 
-
-
 .pt_60px {
-    padding-top: 60px;
+  padding-top: 60px;
 }
 
 .hero_banner_img {
-    position: relative;
-    top: 1px;
+  position: relative;
+  top: 1px;
 }
-
 
 .hero-banner_content h1,
 .hero-banner_content h4 {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-
-
-a.button {
-    display: inline-block;
-    border: 1px solid var(--main-color);
-    border-radius: 30px;
-    color: var(--black-color);
-    font-weight: 500;
-    padding: 12px 41px;
-    color: white;
-    background-color: var(--main-color);
-    transition: all .4s ease;
+a.button ,
+.btn-subscribe {
+  display: inline-block;
+  border: 1px solid var(--main-color);
+  border-radius: 30px;
+  color: var(--black-color);
+  font-weight: 500;
+  padding: 12px 41px;
+  color: white !important;
+  background-color: var(--main-color);
+  transition: all 0.4s ease;
 }
 
-a.button:hover {
-    background-color: transparent !important;
-    border-color: var(--main-color) !important;
-    color:var(--black-color);
+a.button:hover,
+.btn-subscribe:hover {
+  background-color: transparent !important;
+  border-color: var(--main-color) !important;
+  color: var(--black-color) !important;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .card {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 /* نص الظهور عند تحريك الماوس */
-.card .card-img-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    /* خلفية داكنة للنص */
-    color: #fff;
-    /* لون النص */
-    opacity: 0;
-    /* يظهر النص بداية بشكل شفاف */
-    transition: opacity 0.6s ease-in-out;
-    /* تأثير التحول */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.card .card-imgoverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* خلفية داكنة للنص */
+  color: #fff;
+  /* لون النص */
+  opacity: 0;
+  /* يظهر النص بداية بشكل شفاف */
+  transition: opacity 0.6s ease-in-out;
+  /* تأثير التحول */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* عند تحريك الماوس يظهر النص */
-.card:hover .card-img-overlay,
+.card:hover .card-imgoverlay,
 .card:hover .disc_text {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
 .disc_text {
-    position: absolute;
-    bottom: 1rem;
-    left: 0;
-    width: 60%;
-    background: var(--main-color);
-    /* خلفية داكنة للنص */
-    color: #fff;
-    /* لون النص */
-    opacity: 0;
-    /* يظهر النص بداية بشكل شفاف */
-    transition: opacity 0.3s ease-in-out;
-    /* تأثير التحول */
-    padding: 10px;
-    margin: 0;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  width: 60%;
+  background: var(--main-color);
+  /* خلفية داكنة للنص */
+  color: #fff;
+  /* لون النص */
+  opacity: 0;
+  /* يظهر النص بداية بشكل شفاف */
+  transition: opacity 0.3s ease-in-out;
+  /* تأثير التحول */
+  padding: 10px;
+  margin: 0;
 }
 .title {
-    font-family: var(--font-oswald);
+  font-family: var(--font-oswald);
 }
 
 .pb-60px {
-    padding-bottom: 60px;
+  padding-bottom: 60px;
+}
+
+.my-5-3-rem {
+  margin-top: 5rem !important;
+  margin-bottom: 3rem !important;
 }
 
 .title h2 {
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 1.1;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.1;
 }
 
 .title .border-bottom {
-    border-bottom-color: var(--main-color) !important;
-    border-bottom-width: 2px !important;
+  border-bottom-color: var(--main-color) !important;
+  border-bottom-width: 2px !important;
 }
 
+.card-body .card-title:hover {
+  cursor: pointer;
+  color: var(--main-color);
+}
+
+@media (min-width: 1000px) {
+  .offer__content {
+    padding: 122px 0 135px 0;
+  }
+}
+.offer__content {
+  padding: 100px 0 110px 0;
+}
+
+.bg_img {
+    background-image: url("../images/parallax-bg.png");
+    background-size: 100% 100%;
+    background-size: cover;
+}
+@media (min-width: 650px){
+.offer__content h2 {
+    font-size: 50px;
+    margin-bottom: 25px;
+}}
+
+.card-blog__link {
+    font-weight: 500;
+    color: #222;
+}
+.card-blog__link i, .card-blog__link span {
+    font-size: 13px;
+    padding-left: 3px;
+    display: inline-block;
+    transition: all .5s ease;
+}
+.ti-arrow-right:before {
+    content: "\e628";
+}
+
+
+/* footer */
+.footer-dark {
+    padding:50px 0;
+    color:#f0f9ff;
+    background-color:#282d32;
+  }
+  
+  .footer-dark h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-dark ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-dark ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+  }
+  
+  .footer-dark ul a:hover {
+    opacity:0.8;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  .footer-dark .item.text {
+    margin-bottom:36px;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item.text {
+      margin-bottom:0;
+    }
+  }
+  
+  .footer-dark .item.text p {
+    opacity:0.6;
+    margin-bottom:0;
+  }
+  
+  .footer-dark .item.social {
+    text-align:center;
+  }
+  
+  @media (max-width:991px) {
+    .footer-dark .item.social {
+      text-align:center;
+      margin-top:20px;
+    }
+  }
+  
+  .footer-dark .item.social > a {
+    font-size:20px;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+    margin:0 8px;
+    color:#fff;
+    opacity:0.75;
+  }
+  
+  .footer-dark .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-dark .copyright {
+    text-align:center;
+    padding-top:24px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
+  }
