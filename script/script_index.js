@@ -164,11 +164,11 @@ function add_cards(id_element) {
 
 add_cards(cardsContainer)
 add_cards(cardsLatestNews)
-
 add_cards(cardsBastSellers)
+
   let currentIndex = 0;
   const cards = document.querySelectorAll('.card');
-  const totalSlides = Math.ceil(cards.length / 1);
+  const totalSlides = Math.ceil(cards.length / 4);
 
   function showSlide(index) {
     const slider = document.querySelector('.cards-slider');
