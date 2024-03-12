@@ -167,13 +167,22 @@
     </section>
 
     <!-- Best Sellers Product -->
-    <!-- <section class="container my-5-3-rem ">
+    <section class="container my-5-3-rem ">
       <div class="title pb-60px">
         <small class="text-muted">Popular Item in the market</small>
         <h2>Best <span class="border-bottom">Sellers</sub> </h2>
       </div>
-      <div class="row row-cols-1 row-cols-md-4 g-4" id="product-cards-bast-sellers"></div>
-    </section> -->
+      <div class="slider-container ">
+        <div class=" row-cols-6 row-cols-md-4 g-4 cards-slider" id="product-cards-bast-sellers">
+          <!-- JavaScript will populate the cards here -->
+        </div>
+      </div>
+    
+      <div class="navigation">
+        <button class="btn nav-button" onclick="prevSlide()">Previous</button>
+        <button class="btn nav-button" onclick="nextSlide()">Next</button>
+      </div>
+    </section>
     <!-- Latest News 
     Popular Item in the market -->
     <section class="container my-5-3-rem ">
@@ -191,18 +200,21 @@
         <h3 class="subscribe__title">Get Update From Anywhere</h3>
         <p>Bearing Void gathering light light his eavening unto dont afraid</p>
       </div>
-      <form action="">
-        <div class="mb-3">
-          <input type="email" class="form-control rounded-5 " id="exampleInputEmail1" placeholder="Your Email Address"
+      <form class="d-flex  flex-wrap  align-items-start   justify-content-center    ">
+        <div class="mb-3 col-lg-4 col-12">
+          <input type="email" class="form-control rounded-5 py-7rem" id="exampleInputEmail1" placeholder="Your Email Address"
             aria-describedby="emailHelp">
         </div>
+        <div class="px-3 d-lg-block d-none "></div>
+        <div class="">
+          <button type="submit" class="btn btn-subscribe">Subscribe Now</button>
+        </div>
 
-        <button type="submit" class="btn btn-subscribe">Subscribe Now</button>
       </form>
     </section>
   </main>
 
-  <body>
+
     <div class="footer-dark">
       <footer>
         <div class="container">
