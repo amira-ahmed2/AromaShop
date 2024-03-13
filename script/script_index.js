@@ -55,7 +55,7 @@ const listcards = [
         title: "Women Freshwash",
         price: "$150.00"
     }
-  ];
+];
 last_new = [
     {
         id: 1,
@@ -119,7 +119,7 @@ const cardsBastSellers = document.getElementById('product-cards-bast-sellers');
 
 function add_cards(id_element) {
     // إضافة الكاردز إلى الصفحة
-    if(id_element.id != "product-cards-latest-news"){
+    if (id_element.id != "product-cards-latest-news") {
         listcards.forEach(card => {
             const cardHTML = `
         <div class="col">
@@ -136,7 +136,7 @@ function add_cards(id_element) {
       `;
             id_element.innerHTML += cardHTML;
         });
-    } else{
+    } else {
         last_new.forEach(card => {
             console.log(card.comments.length)
             const cardHTML = `
@@ -166,24 +166,24 @@ add_cards(cardsContainer)
 add_cards(cardsLatestNews)
 add_cards(cardsBastSellers)
 
-  let currentIndex = 0;
-  const cards = document.querySelectorAll('.card');
-  const totalSlides = Math.ceil(cards.length / 4);
+let currentIndex = 0;
+const cards = document.querySelectorAll('.card');
+const totalSlides = Math.ceil(cards.length / 4);
 
-  function showSlide(index) {
+function showSlide(index) {
     const slider = document.querySelector('.cards-slider');
     const cardWidth = cards[0].offsetWidth;
     const newPosition = -index * (cardWidth * 1);
     slider.style.transform = `translateX(${newPosition}px)`;
     currentIndex = index;
-  }
+}
 
-  function nextSlide() {
+function nextSlide() {
     currentIndex = (currentIndex + 1) % totalSlides;
     showSlide(currentIndex);
-  }
+}
 
-  function prevSlide() {
+function prevSlide() {
     currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
     showSlide(currentIndex);
-  }
+}

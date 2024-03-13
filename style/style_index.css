@@ -73,7 +73,7 @@ button:hover {
   font-family: "Roboto", sans-serif;
 }
 
-a.button ,
+a.button,
 .btn-subscribe {
   display: inline-block;
   border: 1px solid var(--main-color);
@@ -93,10 +93,12 @@ a.button:hover,
   border-color: var(--main-color) !important;
   color: var(--black-color) !important;
 }
+
 .py-7rem {
   padding-top: 0.7rem !important;
   padding-bottom: 0.7rem !important;
 }
+
 a {
   text-decoration: none;
 }
@@ -148,6 +150,7 @@ a {
   padding: 10px;
   margin: 0;
 }
+
 .title {
   font-family: var(--font-oswald);
 }
@@ -182,108 +185,146 @@ a {
     padding: 122px 0 135px 0;
   }
 }
+
 .offer__content {
   padding: 100px 0 110px 0;
 }
 
 .bg_img {
-    background-image: url("../images/parallax-bg.png");
-    background-size: 100% 100%;
-    background-size: cover;
+  background-image: url("../images/parallax-bg.png");
+  background-size: 100% 100%;
+  background-size: cover;
 }
-@media (min-width: 650px){
-.offer__content h2 {
+
+@media (min-width: 650px) {
+  .offer__content h2 {
     font-size: 50px;
     margin-bottom: 25px;
-}}
+  }
+}
 
 .card-blog__link {
-    font-weight: 500;
-    color: #222;
+  font-weight: 500;
+  color: #222;
 }
-.card-blog__link i, .card-blog__link span {
-    font-size: 13px;
-    padding-left: 3px;
-    display: inline-block;
-    transition: all .5s ease;
+
+.card-blog__link i,
+.card-blog__link span {
+  font-size: 13px;
+  padding-left: 3px;
+  display: inline-block;
+  transition: all .5s ease;
 }
+
 .ti-arrow-right:before {
-    content: "\e628";
+  content: "\e628";
 }
 
 
 /* footer */
-.footer-dark {
-    padding:50px 0;
-   
-    background-color:#002347;
-  }
-  .footer-dark h3 {
-    color: white;
-  }
-  
-  
-  .footer-dark ul {
-    padding:0;
-    list-style:none;
-    line-height:1.6;
-    font-size:14px;
-    margin-bottom:0;
-  }
-  
-  .footer-dark ul a {
-    color:#7b838a;
-    text-decoration:none;
-   
-  }
-  .footer-dark ul li {
-    margin-bottom: 12px;
-    
-  }
-  
-  .footer-dark ul a:hover {
-    color: var(--main-color);
-  }
-  .footer-dark p {
-    color: #7b838a !important;
-  }
-  @media (min-width: 992px)
-  {.offset-lg-1 {
-      margin-left: 8.333333%;
-  }}
+.footer-dark .footer-top {
+  padding: 50px 0;
 
-  /* slider */
+  background-color: #002347;
+}
 
-  .slider-container {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    /* margin: 50px auto; */
-  }
+.footer-dark h4 {
+  color: white;
+  font-family: var(--font-oswald);
+  line-height: 24px;
+  font-weight: 500;
+}
 
-  .cards-slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
+.footer-dark ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}
 
-  .slider-container .card {
-    /* box-sizing: border-box; */
-    padding: 1rem;
-    text-align: center;
-  }
+.footer-dark ul a {
+  color: #7b838a;
+  text-decoration: none;
 
-  .navigation {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
+}
 
-  .nav-button {
-    background-color: transparent;
-    color: var(--gray-color);
-    border: none;
+.footer-dark ul li {
+  margin-bottom: 12px;
+
+}
+
+.footer-dark ul a:hover {
+  color: var(--main-color);
+}
+
+.footer-dark p {
+  color: #7b838a;
+}
+
+@media (min-width: 992px) {
+  .offset-lg-1 {
+    margin-left: 8.333333%;
   }
-  .nav-button:hover {
-    background-color: #D6D6D6 !important;
-    color: white !important;
-  }
+}
+
+.instafeed {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.sm-head i {
+  /* position: relative; */
+  margin-left: -40px;
+  margin-right: 10px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  background: #384aeb;
+  color: #ffffff;
+  border-radius: 20px;
+}
+
+.footer-bottom {
+  background: rgba(0, 35, 71, 0.980392);
+  padding: 32px;
+}
+
+/* slider */
+
+.slider-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  /* margin: 50px auto; */
+}
+
+.cards-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-container .card {
+  /* box-sizing: border-box; */
+  padding: 1rem;
+  text-align: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.nav-button {
+  background-color: transparent;
+  color: var(--gray-color);
+  border: none;
+}
+
+.nav-button:hover {
+  background-color: #D6D6D6 !important;
+  color: white !important;
+}
