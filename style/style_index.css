@@ -6,6 +6,13 @@
   --font-oswald: "Oswald", sans-serif;
 }
 
+body .navbar {
+    position: fixed;
+    top: 0;
+    z-index: 100000000000000;
+    width: 100%;
+
+}
 ul li a.active {
   color: var(--main-color) !important;
 }
